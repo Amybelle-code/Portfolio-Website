@@ -7,5 +7,5 @@ class Course(models.Model):
     duration = models.CharField(max_length=100)
     Degree = models.CharField(max_length=100)
 
-def __str__(self):
-    return self.course
+    def __str__(self):
+        return self.course
