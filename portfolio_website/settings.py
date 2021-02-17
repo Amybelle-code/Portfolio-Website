@@ -51,10 +51,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'portfolio_website.urls'
 
+
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['portfolio_website/templates/', ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
