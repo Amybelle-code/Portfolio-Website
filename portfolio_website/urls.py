@@ -16,7 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+
+"""
+Here, we add the urls of our project app to the portfolio website URLS.
+"""
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('projects/', include('project.urls')),
 
 ]
