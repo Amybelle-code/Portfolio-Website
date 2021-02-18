@@ -9,4 +9,4 @@ class Bio(Model):
     hobby = models.CharField(max_length = 200)
     goals = models.CharField(max_length = 200)
     interest = models.CharField(max_length = 200)
-    # image = models.FilePathField(path="/image")
+    image = models.FilePathField()
