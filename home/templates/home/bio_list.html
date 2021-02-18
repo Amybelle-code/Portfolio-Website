@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        background-color: rgb(102, 200, 207);
+    }
+    .container {
+        display: flex;
+    }
+    .content {
+        display: flex;
+        height: 80vh;
+    }
+    .image{
+        width: 100%;
+    }
+    .box{
+        flex-basis: 60%;
+    }
+    .boxmargin{
+        margin: 20px 10px 20px 10px;
+        border : 1px solid yellow;
+        background-color: chocolate;
+        height: 50%;
+    }
+    .skills{
+        display: flex;
+        flex-direction: column;
+    }
+    .bar{
+        overflow: hidden;
+        background-color: rgb(241, 206, 206);
+        height: 10%;
+    }
+    .bar a {
+        float: left;
+        color: #c78d8d;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .bar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    .bar a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+
+</style>
+<body>
+    <!-- <ul>
+        <!-- Iterate over object_list -->
+        <!-- {% for home_bio in bio_list %} -->
+        <!-- Display Objects -->
+        <!-- <li>{{ home_bio.name }}</li> -->
+        <!-- <li>{{ home_bio.age }}</li> -->
+        <!-- <br> -->
+    
+        <!-- <h1>My name is AMARACHI</h1> -->
+     
+        <!-- <hr/> -->
+        <!-- If objet_list is empty  -->
+        <!-- {% empty %} -->
+        <!-- <li>No objects yet.</li> -->
+        <!-- {% endfor %} -->
+    <!-- </ul> -->
+    <div style="padding-left:16px" class='bar'> 
+        <ul>
+            <li><a class="active" href="default.asp">About</a></li>
+            <li><a href="http://127.0.0.1:8000/projects/">Projects</a></li>
+            <li><a href="http://127.0.0.1:8000/blog/">Blog</a></li>
+            <li><a href="about.asp">Skills</a></li>
+            <li><a href="about.asp">Career</a></li>
+          </ul>
+    </div>
+
+    <div class="container">
+        <div class="image">
+            image
+            <img src="home/mompower.png" alt="mom power" class="clao">
+        </div>
+        <div class="content">
+            <div class="firstcolumn box">
+                first column
+                <div class='bio boxmargin'>
+                    <h2> Profile</h2>
+                    <p> My name is Amarachi Echendu-Joe. I see each day as an opportunity to grow. I believe my connections and network are my strongest assets hence I invest heavily in partnerships.
+
+                        I am a Software Engineer (Pythonista) fascinated by the indescribable power of machine learning and artificial intelligence. My evolving passion is to leverage AI to build sustainable financial bespoke solutions for women in Africa. I am currently undergoing intensive training with Decagon (www.decagonhq.com) in software engineering (python full stack). I am extremely optimistic the skillset acquired will serve any organization effectively.
+                        I manage a podcast called Mom-power that encourages young mothers to overcome post-partum blues and refocus on their early goals and visions. Helping them understand the untapped skillset they subconsciously acquire through motherhood.</p>
+                </div>
+                <div class='career boxmargin'>
+                    education
+                </div>
+            </div>
+            <div class="second-column box">
+                scecond column
+                <div class='skills boxmargin'>
+                    <label for="python">Python</label>
+                    <progress id="python" value="60" max="100"> 70% </progress>
+                    <label for="html">HTML</label>
+                    <progress id="html" value="40" max="100"> 40% </progress>
+                    <label for="css">CSS</label>
+                    <progress id="css" value="20" max="100"> 20% </progress>
+                    <label for="leadership">Leadership</label>
+                    <progress id="leadership" value="70" max="100"> 90% </progress>
+                    <label for="teamwork">HTML</label>
+                    <progress id="teamwork" value="40" max="100"> 70% </progress>
+                </div>
+                <div class='project boxmargin' >
+                    <ul>
+                        <li>Built a context manager</li><br>
+                        <li>Created a portfolio website</li>
+                        <li>Query a database</li>
+                        <li>Built a coff machine with OOP</li>
+                        <li>Designed a mockup site</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
