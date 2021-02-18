@@ -18,8 +18,13 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+
+"""
+Here, we add the urls of our project app to the portfolio website URLS.
+"""
 urlpatterns = [
     path('', include('education.urls')),
     path('admin/', admin.site.urls),
-
+    path('projects/', include('projects.urls')),
+    path("blog/", include("blog.urls")),
 ]+static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
